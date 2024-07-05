@@ -1,0 +1,68 @@
+{
+  "name": "vue3-snipptes",
+  "displayName": "Vue3 Snipptes",
+  "description": "These snippets were made to speed up Vue 3 development. With it you can write boilerplate code infinitely faster.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue.code-snippets"
+      },
+      {
+        "language": "jade",
+        "path": "./snippets/vue-pug.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/vue-template.code-snippets"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vue-template.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script-vuex.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script-router.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/nuxt-config.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/nuxt-script.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-script.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-script-vuex.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-script-router.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/nuxt-config.code-snippets"
+      }
+    ]
+  }
+}
