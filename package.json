@@ -9,6 +9,7 @@
   "categories": [
     "Snippets"
   ],
+  "icon": "./images/logo.png",
   "publisher": "morningstart",
   "repository": "https://github.com/morning-start/",
   "contributes": {
