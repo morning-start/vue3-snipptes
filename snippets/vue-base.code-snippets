@@ -1,0 +1,358 @@
+{
+    // Composition JS
+    "Composition + JavaScript + CSS": {
+        "prefix": "vbase",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup>",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Composition"
+    },
+    "Composition + JavaScript + SCSS": {
+        "prefix": "vbase-scss",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup>",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style lang=\"scss\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Composition with SCSS"
+    },
+    "Composition + JavaScript + Less": {
+        "prefix": "vbase-less",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup>",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style lang=\"less\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single FileComponent in Composition with Less"
+    },
+    "Composition + JavaScript + Stylus": {
+        "prefix": "vbase-stylus",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup>",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style lang=\"stylus\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Componentin Composition with Stylus"
+    },
+    "Composition + JavaScript + PostCSS": {
+        "prefix": "vbase-postcss",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup>",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style lang=\"postcss\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Composition with PostCSS"
+    },
+    // Composition TS
+    "Composition + TypeScript + CSS": {
+        "prefix": "vbase-ts",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup lang=\"ts\">",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Composition with TypeScript"
+    },
+    "Composition + TypeScript + SCSS": {
+        "prefix": "vbase-ts-scss",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup lang=\"ts\">",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style lang=\"scss\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue SingleFile Component in Composition with TypeScript and SCSS"
+    },
+    "Composition + TypeScript + Less": {
+        "prefix": "vbase-ts-less",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup lang=\"ts\">",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style lang=\"less\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Composition with TypeScript and Less"
+    },
+    "Composition + TypeScript + Stylus": {
+        "prefix": "vbase-ts-stylus",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup lang=\"ts\">",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style lang=\"stylus\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Composition with TypeScript and Stylus"
+    },
+    "Composition + TypeScript + PostCSS": {
+        "prefix": "vbase-ts-postcss",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script setup lang=\"ts\">",
+            "\t\t${0}",
+            "</script>",
+            "",
+            "<style lang=\"postcss\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Composition with TypeScript and PostCSS"
+    },
+    // Option JS
+    "Option + JavaScript + CSS": {
+        "prefix": "vbase-opt",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script>",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "",
+            "<style scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Option"
+    },
+    "Option + JavaScript + SCSS": {
+        "prefix": "vbase-opt-scss",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script>",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "<style lang=\"scss\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": " Vue Single File Component in Option with SCSS"
+    },
+    "Option + JavaScript + Less": {
+        "prefix": "vbase-opt-less",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script>",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "<style lang=\"less\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Option with Less"
+    },
+    "Option + JavaScript + Stylus": {
+        "prefix": "vbase-opt-stylus",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script>",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "<style lang=\"stylus\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Option with Stylus"
+    },
+    "Option + JavaScript + PostCSS": {
+        "prefix": "vbase-opt-postcss",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script>",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "<style lang=\"postcss\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Option with PostCSS"
+    },
+    // Option TS
+    "Option + TypeScript + CSS": {
+        "prefix": "vbase-opt-ts",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "",
+            "<style scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Option with TypeScript"
+    },
+    "Option + TypeScript + SCSS": {
+        "prefix": "vbase-opt-ts-scss",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "<style lang=\"scss\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Option with TypeScript and SCSS"
+    },
+    "Option + TypeScript + Less": {
+        "prefix": "vbase-opt-ts-less",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "<style lang=\"less\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Option with TypeScript and Less"
+    },
+    "Option + TypeScript + Stylus": {
+        "prefix": "vbase-opt-ts-stylus",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "<style lang=\"stylus\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Option with TypeScript and Stylus"
+    },
+    "Option + TypeScript + PostCSS": {
+        "prefix": "vbase-opt-ts-postcss",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "\texport default {",
+            "\t\t${0}",
+            "\t}",
+            "</script>",
+            "<style lang=\"postcss\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Vue Single File Component in Option with TypeScript and PostCSS"
+    },
+}
