@@ -3,7 +3,10 @@
     "Composition + JavaScript + CSS": {
         "prefix": "vbase",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "</template>",
             "",
             "<script setup>",
@@ -19,7 +22,10 @@
     "Composition + JavaScript + SCSS": {
         "prefix": "vbase-scss",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -36,7 +42,10 @@
     "Composition + JavaScript + Less": {
         "prefix": "vbase-less",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -53,7 +62,10 @@
     "Composition + JavaScript + Stylus": {
         "prefix": "vbase-stylus",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -70,7 +82,10 @@
     "Composition + JavaScript + PostCSS": {
         "prefix": "vbase-postcss",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -88,7 +103,10 @@
     "Composition + TypeScript + CSS": {
         "prefix": "vbase-ts",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -105,7 +123,10 @@
     "Composition + TypeScript + SCSS": {
         "prefix": "vbase-ts-scss",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -122,7 +143,10 @@
     "Composition + TypeScript + Less": {
         "prefix": "vbase-ts-less",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -139,7 +163,10 @@
     "Composition + TypeScript + Stylus": {
         "prefix": "vbase-ts-stylus",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -156,7 +183,10 @@
     "Composition + TypeScript + PostCSS": {
         "prefix": "vbase-ts-postcss",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -174,7 +204,10 @@
     "Option + JavaScript + CSS": {
         "prefix": "vbase-opt",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -193,7 +226,10 @@
     "Option + JavaScript + SCSS": {
         "prefix": "vbase-opt-scss",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -211,7 +247,10 @@
     "Option + JavaScript + Less": {
         "prefix": "vbase-opt-less",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -229,7 +268,10 @@
     "Option + JavaScript + Stylus": {
         "prefix": "vbase-opt-stylus",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -247,7 +289,10 @@
     "Option + JavaScript + PostCSS": {
         "prefix": "vbase-opt-postcss",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -266,7 +311,10 @@
     "Option + TypeScript + CSS": {
         "prefix": "vbase-opt-ts",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -285,7 +333,10 @@
     "Option + TypeScript + SCSS": {
         "prefix": "vbase-opt-ts-scss",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -303,7 +354,10 @@
     "Option + TypeScript + Less": {
         "prefix": "vbase-opt-ts-less",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -321,7 +375,10 @@
     "Option + TypeScript + Stylus": {
         "prefix": "vbase-opt-ts-stylus",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
@@ -339,7 +396,10 @@
     "Option + TypeScript + PostCSS": {
         "prefix": "vbase-opt-ts-postcss",
         "body": [
-            "<template>","<div>","","</div>",
+            "<template>",
+            "<div>",
+            "",
+            "</div>",
             "",
             "</template>",
             "",
