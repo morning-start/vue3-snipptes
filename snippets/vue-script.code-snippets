@@ -509,16 +509,5 @@
     ],
     "description": "Use Composition API within Options API"
   },
-  // Vue config
-  "Vue Config src Alias": {
-    "prefix": "vconfig-src",
-    "body": [
-      "\tresolve: {",
-      "\t\talias: {",
-      "\t\t\t'@': fileURLToPath(new URL('./src', import.meta.url))",
-      "\t\t}",
-      "\t}"
-    ],
-    "description": "Vue Config add @ alias"
-  }
+
 }

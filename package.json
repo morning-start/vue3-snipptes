@@ -35,6 +35,10 @@
         "path": "./snippets/router.code-snippets"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/vite.code-snippets"
+      },
+      {
         "language": "typescript",
         "path": "./snippets/vue-script.code-snippets"
       },
@@ -45,6 +49,10 @@
       {
         "language": "typescript",
         "path": "./snippets/router.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vite.code-snippets"
       }
     ]
   }

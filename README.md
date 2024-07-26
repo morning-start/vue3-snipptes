@@ -9,8 +9,10 @@
 Make the syntax closer to Vue3, the whole will be biased towards combination, and the selection needs to be suffixed with `-opt`
 
 - init vue file start with `vbase`
-- pinia support start with `pinia`
 - use option with `-opt` below prefix. such as `vbase-opt`
+- pinia support start with `pinia`
+- vite start with `vite`
+- router support start with `router`
 
 ### TODO
 
@@ -18,6 +20,7 @@ Make the syntax closer to Vue3, the whole will be biased towards combination, an
 - [ ]  vue template
 - [x]  pinia
 - [ ]  router
+- [ ]  vite
 
 ## Reference
 

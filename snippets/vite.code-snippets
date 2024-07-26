@@ -1,0 +1,13 @@
+{
+    "Vite Config src Alias": {
+        "prefix": "vite-src",
+        "body": [
+            "resolve: {",
+            "\talias: {",
+            "\t\t'@': fileURLToPath(new URL('./src', import.meta.url))",
+            "\t}",
+            "}"
+        ],
+        "description": "Vite Config add @ alias"
+    }
+}
