@@ -1,0 +1,100 @@
+{
+    "Pinia Store": {
+        "prefix": "pinia-store-init",
+        "body": [
+            "import { ref, computed } from 'vue';",
+            "import { defineStore } from 'pinia';",
+            "",
+            "export const use${TM_FILENAME_BASE/(.*)/${0:/capitalize}/}Store = defineStore('${TM_FILENAME_BASE}', () => {",
+            "\tconst count = ref(0)",
+            "\tconst name = ref('Eduardo')",
+            "\tconst doubleCount = computed(() => count.value * 2)",
+            "\tfunction increment() {",
+            "\t\tcount.value++",
+            "\t}",
+            "",
+            "\treturn { count, name, doubleCount, increment }",
+            "})",
+            ""
+        ],
+        "description": "Initialize a Pinia store use filename with Setup"
+    },
+    "Pinia store": {
+        "prefix": "pinia-store-use",
+        "body": [
+            "import { use${2:Counter}Store } from '@/stores/${1:counter}'",
+            "const store = use${2:Counter}Store()",
+            ""
+        ],
+        "description": "Use Pinia store with Steup"
+    },
+    "Pinia State Destructuring": {
+        "prefix": "pinia-state-dest",
+        "body": [
+            "import { storeToRefs } from 'pinia'",
+            "",
+            "const { ${0:state} } = storeToRefs(store)",
+        ],
+        "description": "Destructuring Pinia state with Steup"
+    },
+    "Pinia Action Destructuring": {
+        "prefix": "pinia-action-dest",
+        "body": [
+            "const { ${0:action} } = store",
+        ],
+        "description": "Destructuring Pinia action with Steup"
+    },
+    "Pinia State Reset Function": {
+        "prefix": "pinia-state-reset",
+        "body": [
+            "\tfunction \\$reset() {",
+            "\t\t$1",
+            "\t}"
+        ],
+        "description": "Pinia state Reset Function with Steup"
+    },
+    // Option
+    "Pinia Store Option": {
+        "prefix": "pinia-store-init-opt",
+        "body": [
+            "import { defineStore } from 'pinia'",
+            "",
+            "export const use${TM_FILENAME_BASE/(.*)/${0:/capitalize}/}Store = defineStore('${TM_FILENAME_BASE}', () => {",
+            "\tstate: () => ({ count: 0 }),",
+            "\tgetters: {",
+            "\t\tdouble: (state) => state.count * 2,",
+            "\t},",
+            "\tactions: {",
+            "\t\tincrement() {",
+            "\t\t\tthis.count++",
+            "\t\t},",
+            "\t},",
+            "})",
+            ""
+        ],
+        "description": "Initialize a Pinia store with option"
+    },
+    "Pinia Getter Option": {
+        "prefix": "pinia-getter-opt",
+        "body": [
+            "\t\t$1($2) {",
+            "\t\t\treturn $3",
+            "\t\t},"
+        ],
+    },
+    "Pinia Getter Option Arrow": {
+        "prefix": "pinia-getter-opt-arrow",
+        "body": [
+            "$1: ({$2:state}) => {$2:state},"
+        ],
+    },
+    "Pinia Action Option": {
+        "prefix": "pinia-action-opt",
+        "body": [
+            "\t\t$1() {",
+            "\t\t\t$2",
+            "\t\t},"
+        ],
+    },
+
+}

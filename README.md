@@ -12,11 +12,15 @@ This extension provides snippets for Vue3.
 
 Make the syntax closer to Vue3, the whole will be biased towards combination, and the selection needs to be suffixed with `-opt`
 
+- init vue file start with `vbase`
+- pinia support start with `pinia-`
+- use option end with `-opt`
+
 ### TODO
 
 - [x]  vue init int combination
 - [ ]  vue template
-- [ ]  pinia
+- [x]  pinia
 - [ ]  router
 
 ## Reference
