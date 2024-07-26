@@ -55,7 +55,7 @@
     },
     // Option
     "Pinia Store Option": {
-        "prefix": "pinia-store-init-opt",
+        "prefix": "pinia-opt-store-init",
         "body": [
             "import { defineStore } from 'pinia'",
             "",
@@ -75,7 +75,7 @@
         "description": "Initialize a Pinia store with option"
     },
     "Pinia Getter Option": {
-        "prefix": "pinia-getter-opt",
+        "prefix": "pinia-opt-getter",
         "body": [
             "\t\t$1($2) {",
             "\t\t\treturn $3",
@@ -83,13 +83,13 @@
         ],
     },
     "Pinia Getter Option Arrow": {
-        "prefix": "pinia-getter-opt-arrow",
+        "prefix": "pinia-opt-getter-arrow",
         "body": [
             "$1: ({$2:state}) => {$2:state},"
         ],
     },
     "Pinia Action Option": {
-        "prefix": "pinia-action-opt",
+        "prefix": "pinia-opt-action",
         "body": [
             "\t\t$1() {",
             "\t\t\t$2",
