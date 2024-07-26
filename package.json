@@ -16,7 +16,7 @@
     "snippets": [
       {
         "language": "vue",
-        "path": "./snippets/vue-base.code-snippets"
+        "path": "./snippets/vue-init.code-snippets"
       },
       {
         "language": "html",
