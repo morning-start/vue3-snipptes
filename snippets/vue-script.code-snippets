@@ -1,12 +1,24 @@
 {
   "Vue Data": {
     "prefix": "vdata",
-    "body": ["data() {", "\treturn {", "\t\t${1:key}: ${2:value}", "\t}", "},"],
+    "body": [
+      "data() {",
+      "\treturn {",
+      "\t\t${1:key}: ${2:value}",
+      "\t}",
+      "},"
+    ],
     "description": "Vue Component Data"
   },
   "Vue Methods": {
     "prefix": "vmethod",
-    "body": ["methods: {", "\t${1:name}() {", "\t\t${0}", "\t}", "},"],
+    "body": [
+      "methods: {",
+      "\t${1:name}() {",
+      "\t\t${0}",
+      "\t}",
+      "},"
+    ],
     "description": "vue method"
   },
   "Vue Computed": {
@@ -22,42 +34,74 @@
   },
   "Vue Lifecycle beforeCreate": {
     "prefix": "vbeforecreate",
-    "body": ["beforeCreate () {", "\t${0};", "},"],
+    "body": [
+      "beforeCreate () {",
+      "\t${0};",
+      "},"
+    ],
     "description": "beforeCreate lifecycle method"
   },
   "Vue Lifecycle created": {
     "prefix": "vcreated",
-    "body": ["created () {", "\t${0};", "},"],
+    "body": [
+      "created () {",
+      "\t${0};",
+      "},"
+    ],
     "description": "created lifecycle method"
   },
   "Vue Lifecycle beforeMount": {
     "prefix": "vbeforemount",
-    "body": ["beforeMount () {", "\t${0};", "},"],
+    "body": [
+      "beforeMount () {",
+      "\t${0};",
+      "},"
+    ],
     "description": "beforeMount lifecycle method"
   },
   "Vue Lifecycle mounted": {
     "prefix": "vmounted",
-    "body": ["mounted () {", "\t${0};", "},"],
+    "body": [
+      "mounted () {",
+      "\t${0};",
+      "},"
+    ],
     "description": "mounted lifecycle method"
   },
   "Vue Lifecycle beforeUpdate": {
     "prefix": "vbeforeupdate",
-    "body": ["beforeUpdate () {", "\t${0};", "},"],
+    "body": [
+      "beforeUpdate () {",
+      "\t${0};",
+      "},"
+    ],
     "description": "beforeUpdate lifecycle method"
   },
   "Vue Lifecycle updated": {
     "prefix": "vupdated",
-    "body": ["updated () {", "\t${0};", "},"],
+    "body": [
+      "updated () {",
+      "\t${0};",
+      "},"
+    ],
     "description": "updated lifecycle method"
   },
   "Vue Lifecycle beforeDestroy": {
     "prefix": "vbeforedestroy",
-    "body": ["beforeDestroy () {", "\t${0};", "},"],
+    "body": [
+      "beforeDestroy () {",
+      "\t${0};",
+      "},"
+    ],
     "description": "beforeDestroy lifecycle method"
   },
   "Vue Lifecycle destroyed": {
     "prefix": "vdestroyed",
-    "body": ["destroyed () {", "\t${0};", "},"],
+    "body": [
+      "destroyed () {",
+      "\t${0};",
+      "},"
+    ],
     "description": "destroyed lifecycle method"
   },
   "Vue Watchers": {
@@ -100,12 +144,18 @@
   },
   "Vue Import File": {
     "prefix": "vimport",
-    "body": ["import ${1:New} from '@/components/${1:New}.vue';"],
+    "body": [
+      "import ${1:New} from '@/components/${1:New}.vue';"
+    ],
     "description": "Import one component into another"
   },
   "Vue Import into the Component": {
     "prefix": "vcomponents",
-    "body": ["components: {", "\t${1:New},", "},"],
+    "body": [
+      "components: {",
+      "\t${1:New},",
+      "},"
+    ],
     "description": "Import one component into another, within export statement"
   },
   "Vue Import Export": {
@@ -123,7 +173,9 @@
   },
   "Vue Import Component Dynamically": {
     "prefix": "vimport-dynamic",
-    "body": ["${1:New} = () => import('@/components/${1:New}.vue')"],
+    "body": [
+      "${1:New} = () => import('@/components/${1:New}.vue')"
+    ],
     "description": "Import component that should be lazy loaded"
   },
   "Vue MapState": {
@@ -210,7 +262,9 @@
   },
   "Vue Use Mixin": {
     "prefix": "vmixin-use",
-    "body": ["mixins: [${1:mixinName}],"],
+    "body": [
+      "mixins: [${1:mixinName}],"
+    ],
     "description": "vue use mixin"
   },
   "Vue Custom Directive": {
@@ -226,12 +280,16 @@
   },
   "Vue Import Library": {
     "prefix": "vimport-lib",
-    "body": ["import { ${1:libName} } from '${1:libName}';"],
+    "body": [
+      "import { ${1:libName} } from '${1:libName}';"
+    ],
     "description": "import a library"
   },
   "Vue Import GSAP": {
     "prefix": "vimport-gsap",
-    "body": ["import gsap from 'gsap';"],
+    "body": [
+      "import gsap from 'gsap';"
+    ],
     "description": "import gsap library"
   },
   "Vue Transition Methods with JavaScript Hooks": {
@@ -306,17 +364,29 @@
   },
   "Vue Composition API - Reactive": {
     "prefix": "v3reactive",
-    "body": ["const ${1:name} = reactive({", "\t${2:count}: ${3:0}", "})"],
+    "body": [
+      "const ${1:name} = reactive({",
+      "\t${2:count}: ${3:0}",
+      "})"
+    ],
     "description": "Vue Composition api - reactive"
   },
   "Vue Composition API - Computed": {
     "prefix": "v3computed",
-    "body": ["const ${1:name} = computed(() => {", "\treturn ${2}", "})"],
+    "body": [
+      "const ${1:name} = computed(() => {",
+      "\treturn ${2}",
+      "})"
+    ],
     "description": "Vue Composition api - computed"
   },
   "Vue Composition API - watch - single source": {
     "prefix": "v3watch",
-    "body": ["watch(() => ${1:foo}, (newValue, oldValue) => {", "\t${2}", "})"],
+    "body": [
+      "watch(() => ${1:foo}, (newValue, oldValue) => {",
+      "\t${2}",
+      "})"
+    ],
     "description": "Vue Composition api - watcher single source"
   },
   "Vue Composition API - watch - array": {
@@ -330,47 +400,67 @@
   },
   "Vue Composition API - watchEffect": {
     "prefix": "v3watcheffect",
-    "body": ["watchEffect(() => {", "\t${1}", "})"],
+    "body": [
+      "watchEffect(() => {",
+      "\t${1}",
+      "})"
+    ],
     "description": "Vue Composition api - watchEffect"
   },
   "Vue Composition API - Vue ref": {
     "prefix": "v3ref",
-    "body": ["const ${1:name} = ref(${2:initialValue})"],
+    "body": [
+      "const ${1:name} = ref(${2:initialValue})"
+    ],
     "description": "Vue Ref"
   },
   "Vue Lifecycle Hooks - onMounted": {
     "prefix": "v3onmounted",
-    "body": ["onMounted(() => {${1}})"],
+    "body": [
+      "onMounted(() => {${1}})"
+    ],
     "description": "Vue Mounted Lifecycle hook"
   },
   "Vue Lifecycle Hooks - onBeforeMount": {
     "prefix": "v3onbeforemount",
-    "body": ["onBeforeMount(() => {${1}})"],
+    "body": [
+      "onBeforeMount(() => {${1}})"
+    ],
     "description": "Vue onBeforeMount Lifecycle hook"
   },
   "Vue Lifecycle Hooks - onBeforeUpdate": {
     "prefix": "v3onbeforeupdate",
-    "body": ["onBeforeUpdate(() => {${1}})"],
+    "body": [
+      "onBeforeUpdate(() => {${1}})"
+    ],
     "description": "Vue onBeforeUpdate Lifecycle hook"
   },
   "Vue Lifecycle Hooks - onUpdated": {
     "prefix": "v3onupdated",
-    "body": ["onUpdated(() => {${1}})"],
+    "body": [
+      "onUpdated(() => {${1}})"
+    ],
     "description": "Vue onUpdated Lifecycle hook"
   },
   "Vue Lifecycle Hooks - onErrorCaptured": {
     "prefix": "v3onerrorcaptured",
-    "body": ["onErrorCaptured(() => {${1}})"],
+    "body": [
+      "onErrorCaptured(() => {${1}})"
+    ],
     "description": "Vue onErrorCaptured Lifecycle hook"
   },
   "Vue Lifecycle Hooks - onUnmounted": {
     "prefix": "v3onunmounted",
-    "body": ["onUnmounted(() => {${1}})"],
+    "body": [
+      "onUnmounted(() => {${1}})"
+    ],
     "description": "(destroyed) Vue onUnmounted Lifecycle hook"
   },
   "Vue Lifecycle Hooks - onBeforeUnmount": {
     "prefix": "v3onbeforeunmount",
-    "body": ["onBeforeUnmount(() => {${1}})"],
+    "body": [
+      "onBeforeUnmount(() => {${1}})"
+    ],
     "description": "(beforeDestroy) Vue onBeforeUnmount Lifecycle hook"
   },
   "Plugin import": {
@@ -418,5 +508,17 @@
       "}"
     ],
     "description": "Use Composition API within Options API"
+  },
+  // Vue config
+  "Vue Config src Alias": {
+    "prefix": "vconfig-src",
+    "body": [
+      "\tresolve: {",
+      "\t\talias: {",
+      "\t\t\t'@': fileURLToPath(new URL('./src', import.meta.url))",
+      "\t\t}",
+      "\t}"
+    ],
+    "description": "Vue Config add @ alias"
   }
 }
