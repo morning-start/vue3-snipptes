@@ -1,21 +1,21 @@
 {
   "Vue Router": {
-    "prefix": "vrouter",
+    "prefix": "router-base",
     "body": [
-      "import Vue from 'vue';",
-      "import VueRouter from 'vue-router';",
-      "",
-      "Vue.use(VueRouter);",
-      "",
-      "export const router = new VueRouter({",
-      "\tbase: '/',",
-      "\tmode: 'history',",
-      "\troutes: [",
-      "\t\t{ path: '/path', component: component }",
-      "\t]",
-      "});"
+      "\t\t{",
+      "\t\t\tpath: '/$0',",
+      "\t\t\tname: '${1:home}',",
+      "\t\t\tcomponent: () => import('@/views${2:/HomeView.vue}')",
+      "\t\t},"
     ],
     "description": "Base for Vue Router"
+  },
+  "Vue Router Component": {
+    "prefix": "router-component",
+    "body": [
+      "() => import('@/views${1:/HomeView.vue}')"
+    ],
+    "description": "Vue Router component arrow function"
   },
   "Vue Router scrollBehavior": {
     "prefix": "vscrollbehavior",
@@ -50,12 +50,20 @@
   },
   "Vue Router afterEach": {
     "prefix": "vaftereach",
-    "body": ["router.afterEach((to, from) => {", "\t", "});"],
+    "body": [
+      "router.afterEach((to, from) => {",
+      "\t",
+      "});"
+    ],
     "description": "Vue Router global guards afterEach"
   },
   "Vue Router beforeEnter": {
     "prefix": "vbeforeenter",
-    "body": ["beforeEnter(to, from, next) {", "\t${1:next();}", "},"],
+    "body": [
+      "beforeEnter(to, from, next) {",
+      "\t${1:next();}",
+      "},"
+    ],
     "description": "Vue Router per-route guard beforeEnter"
   },
   "Vue Router beforeRouteEnter": {
@@ -69,12 +77,20 @@
   },
   "Vue Router beforeRouteUpdate": {
     "prefix": "vbeforerouteupdate",
-    "body": ["beforeRouteUpdate(to, from, next) {", "\t${1:next();}", "},"],
+    "body": [
+      "beforeRouteUpdate(to, from, next) {",
+      "\t${1:next();}",
+      "},"
+    ],
     "description": "Vue Router component guards beforeRouteUpdate"
   },
   "Vue Router beforeRouteLeave": {
     "prefix": "vbeforerouteleave",
-    "body": ["beforeRouteLeave(to, from, next) {", "\t${1:next();}", "},"],
+    "body": [
+      "beforeRouteLeave(to, from, next) {",
+      "\t${1:next();}",
+      "},"
+    ],
     "description": "Vue Router component guards beforeRouteLeave"
   },
   "Vue Router Route": {
