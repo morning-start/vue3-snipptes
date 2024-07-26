@@ -2,7 +2,7 @@
   "name": "vue3-snipptes",
   "displayName": "Vue3 Snipptes",
   "description": "These snippets were made to speed up Vue 3 development. With it you can write boilerplate code infinitely faster.",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "engines": {
     "vscode": "^1.91.0"
   },
