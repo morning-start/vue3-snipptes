@@ -1,11 +1,11 @@
 {
   "Vue Router Route": {
-    "prefix": "router-Route",
+    "prefix": "router-route",
     "body": [
       "{",
-      "\tpath: '/$0',",
-      "\tname: '${1:home}',",
-      "\tcomponent: () => import('@/views${2:/HomeView.vue}')",
+      "\tpath: '/$1',",
+      "\tname: '${2:home}',",
+      "\tcomponent: () => import('@/views${3:/HomeView.vue}')",
       "},"
     ],
     "description": "Base for Vue Router"
