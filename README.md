@@ -6,9 +6,18 @@ This extension provides snippets for Vue3.
 > And the snippets map will be updated, you can see the progress in the todo table below. If it not finished, you can see the map in [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
 >
 
+🔥 I will only support vue3 + pinia + router + ts/js in later versions.
+
 ## Features
 
 Make the syntax closer to Vue3, the whole will be biased towards combination, and the selection needs to be suffixed with `-opt`
+
+### TODO
+
+- [x]  vue init int combination
+- [ ]  vue template
+- [ ]  pinia
+- [ ]  router
 
 ## Reference
 
