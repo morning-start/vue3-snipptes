@@ -110,8 +110,8 @@ snippets/
 - `vmounted` - mounted 生命周期钩子
 - `vbeforeupdate` - beforeUpdate 生命周期钩子
 - `vupdated` - updated 生命周期钩子
-- `vbeforedestroy` - beforeDestroy 生命周期钩子
-- `vdestroyed` - destroyed 生命周期钩子
+- `vbeforedestroy` - beforeDestroy 生命周期钩子 (Vue 2 钩子已废弃，请使用 v3onbeforeunmount)
+- `vdestroyed` - destroyed 生命周期钩子 (Vue 2 钩子已废弃，请使用 v3onunmounted)
 - `vwatcher` - Vue 监听器
 - `vwatcher-options` - 带选项的 Vue 监听器
 - `vprops` - Vue Props 定义

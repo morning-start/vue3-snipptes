@@ -93,7 +93,7 @@
       "\t${0};",
       "},"
     ],
-    "description": "beforeDestroy lifecycle method"
+    "description": "beforeDestroy lifecycle method (Vue 2 hook deprecated, please use v3onbeforeunmount for Vue 3)"
   },
   "Vue Lifecycle destroyed": {
     "prefix": "vdestroyed",
@@ -102,7 +102,7 @@
       "\t${0};",
       "},"
     ],
-    "description": "destroyed lifecycle method"
+    "description": "destroyed lifecycle method (Vue 2 hook deprecated, please use v3onunmounted for Vue 3)"
   },
   "Vue Watchers": {
     "prefix": "vwatcher",
