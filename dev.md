@@ -150,6 +150,14 @@ snippets/
 - `vplugin` - 插件定义
 - `v3reactive-setup` - 在 setup 中使用 reactive
 - `v3useinoptions` - 在选项式 API 中使用组合式 API
+- `vdefineprops` - Vue 3 defineProps API (带类型推导)
+- `vdefineemits` - Vue 3 defineEmits API
+- `vdefineexpose` - Vue 3 defineExpose API
+- `vdefinemodel` - Vue 3 defineModel API (用于 v-model 的新语法糖，Vue 3.4+)
+- `vuseref` - Vue 3 ref 快速声明
+- `vusecomputed` - Vue 3 computed 快速声明
+- `vusewatch` - Vue 3 watch 快速声明
+- `vuseonmounted` - Vue 3 onMounted 快速声明
 
 ### 7. 忽略文件代码片段 (`ignore.code-snippets`)
 
@@ -194,6 +202,12 @@ snippets/
   "path": "./snippets/文件名.code-snippets"
 }
 ```
+
+### Vue 3.4+ 组合式 API 代码片段
+
+新增的 `vdefineprops`、`vdefineemits`、`vdefineexpose` 和 `vdefinemodel` 代码片段是 Vue 3.4+ 中推荐使用的组合式 API 模式。这些代码片段提供了更简洁的语法来定义组件的 props、emits、暴露的属性以及 v-model 的实现。
+
+新增的 `vuseref`、`vusecomputed`、`vusewatch` 和 `vuseonmounted` 代码片段是常用的组合式 API 的快速声明方式，可以帮助开发者更快地编写 Vue 3 代码。
 
 ## 发布流程
 

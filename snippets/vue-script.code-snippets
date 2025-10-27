@@ -509,5 +509,71 @@
     ],
     "description": "Use Composition API within Options API"
   },
+  "Vue Composition API - defineProps": {
+    "prefix": "vdefineprops",
+    "body": [
+      "const props = defineProps({",
+      "\t${1:name}: ${2:type}",
+      "})"
+    ],
+    "description": "defineProps with type inference"
+  },
+  "Vue Composition API - defineEmits": {
+    "prefix": "vdefineemits",
+    "body": [
+      "const emit = defineEmits(['${1:eventName}'])"
+    ],
+    "description": "defineEmits"
+  },
+  "Vue Composition API - defineExpose": {
+    "prefix": "vdefineexpose",
+    "body": [
+      "defineExpose({",
+      "\t${1:name}",
+      "})"
+    ],
+    "description": "defineExpose"
+  },
+  "Vue Composition API - defineModel": {
+    "prefix": "vdefinemodel",
+    "body": [
+      "const ${1:modelName} = defineModel()"
+    ],
+    "description": "defineModel for v-model (Vue 3.4+)"
+  },
+  "Vue Composition API - useRef": {
+    "prefix": "vuseref",
+    "body": [
+      "const ${1:name} = ref(${2:initialValue})"
+    ],
+    "description": "const foo = ref() quick declaration"
+  },
+  "Vue Composition API - useComputed": {
+    "prefix": "vusecomputed",
+    "body": [
+      "const ${1:name} = computed(() => {",
+      "\treturn ${2:value}",
+      "})"
+    ],
+    "description": "const foo = computed(() => {})"
+  },
+  "Vue Composition API - useWatch": {
+    "prefix": "vusewatch",
+    "body": [
+      "watch(() => ${1:source}, (newValue, oldValue) => {",
+      "\t${2:callback}",
+      "})"
+    ],
+    "description": "watch(() => ..., () => ...)"
+  },
+  "Vue Composition API - useOnMounted": {
+    "prefix": "vuseonmounted",
+    "body": [
+      "onMounted(() => {",
+      "\t${1:callback}",
+      "})"
+    ],
+    "description": "Quickly insert onMounted(() => {})"
+  },
 
 }
