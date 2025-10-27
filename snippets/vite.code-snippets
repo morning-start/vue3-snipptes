@@ -9,5 +9,38 @@
             "}"
         ],
         "description": "Vite Config add @ alias"
+    },
+    "Vite Environment Variables": {
+        "prefix": "vite-env",
+        "body": [
+            "// https://vitejs.dev/guide/env-and-mode.html",
+            "// To prevent accidentally leaking env variables to the client, only variables prefixed with VITE_ are exposed to your Vite-processed code",
+            "const ENV = import.meta.env.VITE_${1:KEY}"
+        ],
+        "description": "Read environment variables (import.meta.env.VITE_...)"
+    },
+    "Vite Define Config": {
+        "prefix": "vite-define",
+        "body": [
+            "// https://vitejs.dev/config/shared-options.html#define",
+            "define: {",
+            "\t__APP_VERSION__: JSON.stringify(process.env.npm_package_version),",
+            "\t__BUILD_TIME__: JSON.stringify(new Date().toLocaleString()),",
+            "\t${1:__GLOBAL_CONST__}: ${2:'value'}",
+            "}"
+        ],
+        "description": "Define config option (for global constant replacement)"
+    },
+    "Vite Common Plugins": {
+        "prefix": "vite-plugins",
+        "body": [
+            "plugins: [",
+            "\tvue(),",
+            "\t${1:// ts(),}",
+            "\t${2:// unocss(),}",
+            "\t${3:// compression(),}",
+            "]"
+        ],
+        "description": "Common plugin configuration template (vue(), ts(), unocss(), compression())"
     }
 }

@@ -75,6 +75,9 @@ snippets/
 用于 Vite 配置的代码片段：
 
 - `vite-src` - Vite 配置添加 @ 别名
+- `vite-env` - 读取环境变量（import.meta.env.VITE_...）
+- `vite-define` - define 配置项（用于全局常量替换）
+- `vite-plugins` - 常用插件配置模板（如 vue(), ts(), unocss(), compression()）
 
 ### 5. Vue 模板代码片段 (`vue-template.code-snippets`)
 
