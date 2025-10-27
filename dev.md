@@ -127,10 +127,6 @@ snippets/
 - `vcomponents` - 注册组件
 - `vimport-export` - 导入并注册组件
 - `vimport-dynamic` - 动态导入组件
-- `vmapstate` - 映射状态
-- `vmapgetters` - 映射 getters
-- `vmapmutations` - 映射 mutations
-- `vmapactions` - 映射 actions
 - `vfilter` - Vue 过滤器
 - `vmixin` - Vue mixin 定义
 - `vmixin-use` - 使用 Vue mixin
@@ -138,8 +134,6 @@ snippets/
 - `vimport-lib` - 导入库
 - `vimport-gsap` - 导入 GSAP 动画库
 - `vanimhook-js` - JavaScript 动画钩子
-- `vcommit` - Vuex commit
-- `vdispatch` - Vuex dispatch
 - `vtest` - 测试代码模板
 - `vconfig` - 配置对象
 - `v3reactive` - Vue 3 reactive API
