@@ -51,6 +51,9 @@ snippets/
 - `pinia-opt-getter` - Pinia getter (选项式)
 - `pinia-opt-getter-arrow` - Pinia getter 箭头函数 (选项式)
 - `pinia-opt-action` - Pinia action (选项式)
+- `pinia-store-composable` - 创建一个组合式 store（带 defineStore + setup）
+- `pinia-use-store` - 自动导入并使用 store（如 const userStore = useUserStore()）
+- `pinia-persist` - 支持持久化插件（如 persist: true 配置）
 
 ### 3. Vue Router 代码片段 (`router.code-snippets`)
 
@@ -208,6 +211,14 @@ snippets/
 新增的 `vdefineprops`、`vdefineemits`、`vdefineexpose` 和 `vdefinemodel` 代码片段是 Vue 3.4+ 中推荐使用的组合式 API 模式。这些代码片段提供了更简洁的语法来定义组件的 props、emits、暴露的属性以及 v-model 的实现。
 
 新增的 `vuseref`、`vusecomputed`、`vusewatch` 和 `vuseonmounted` 代码片段是常用的组合式 API 的快速声明方式，可以帮助开发者更快地编写 Vue 3 代码。
+
+### Pinia 2+ 代码片段
+
+新增的 `pinia-store-composable`、`pinia-use-store` 和 `pinia-persist` 代码片段是为了更好地支持 Pinia 2+ 的功能：
+
+- `pinia-store-composable` - 创建一个组合式 store（带 defineStore + setup）
+- `pinia-use-store` - 自动导入并使用 store（如 const userStore = useUserStore()）
+- `pinia-persist` - 支持持久化插件（如 persist: true 配置），很多项目使用 pinia-plugin-persistedstate，可提供模板
 
 ## 发布流程
 

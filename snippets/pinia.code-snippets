@@ -96,5 +96,59 @@
             "\t\t},"
         ],
     },
+    // Composable Store
+    "Pinia Composable Store": {
+        "prefix": "pinia-store-composable",
+        "body": [
+            "import { defineStore } from 'pinia'",
+            "",
+            "export const use${TM_FILENAME_BASE/(.*)/${0:/capitalize}/}Store = defineStore('${TM_FILENAME_BASE}', () => {",
+            "\t// state",
+            "\tconst ${1:state} = ref(${2:initialValue})",
+            "",
+            "\t// getters",
+            "\tconst ${3:getterName} = computed(() => ${1:state})",
+            "",
+            "\t// actions",
+            "\tfunction ${4:actionName}() {",
+            "\t\t$5",
+            "\t}",
+            "",
+            "\treturn { ${1:state}, ${3:getterName}, ${4:actionName} }",
+            "})",
+            ""
+        ],
+        "description": "Create a composable store with defineStore + setup"
+    },
+    // Use Store
+    "Pinia Use Store": {
+        "prefix": "pinia-use-store",
+        "body": [
+            "const ${1:storeName}Store = use${1:storeName/(.*)/${0:/capitalize}/}Store()",
+            ""
+        ],
+        "description": "Auto import and use store (e.g. const userStore = useUserStore())"
+    },
+    // Persist Plugin
+    "Pinia Persist Plugin": {
+        "prefix": "pinia-persist",
+        "body": [
+            "export const use${TM_FILENAME_BASE/(.*)/${0:/capitalize}/}Store = defineStore('${TM_FILENAME_BASE}', () => {",
+            "\t// state",
+            "\tconst ${1:state} = ref(${2:initialValue})",
+            "",
+            "\treturn { ${1:state} }",
+            "}, {",
+            "\t// persist configuration",
+            "\tpersist: {",
+            "\t\tkey: '${TM_FILENAME_BASE}-store',",
+            "\t\tstorage: localStorage, // or sessionStorage",
+            "\t\t// paths: ['${1:state}'] // specify which state to persist",
+            "\t}",
+            "})",
+            ""
+        ],
+        "description": "Support for persist plugin (e.g. persist: true configuration)"
+    }
 
 }
