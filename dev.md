@@ -104,6 +104,22 @@ snippets/
 - `vemit-parent` - 父组件监听事件
 - `vrouter-view` - Vue Router View 组件
 - `vrouter-link` - Vue Router Link 组件
+- `vbind` - v-bind="object" 快速绑定
+- `vbind-class` - 更语义化的类名绑定
+- `vbind-style` - 更语义化的样式绑定
+- `vbind-same` - Vue 3.4+ v-bind同名简写
+- `vteleport` - Teleport 组件模板
+- `vsuspense` - Suspense 组件模板
+- `vtransition` - Transition 组件模板
+- `vkeepalive` - KeepAlive 组件模板
+- `vdynslot` - 动态插槽模板
+- `vfragment` - Fragment 片段模板（Vue 3 支持多个根元素）
+- `vasynccomp` - 异步组件模板（结合 Suspense 使用）
+- `vmodelmod` - v-model 参数和修饰符模板
+- `vstylebind` - 响应式样式绑定模板
+- `vcustomdir` - 自定义指令模板
+- `vteleportmul` - Teleport 多目标模板
+- `vtemplateref` - 模板引用模板 (Vue 3.5+)
 
 ### 6. Vue 脚本代码片段 (`vue-script.code-snippets`)
 
@@ -157,13 +173,42 @@ snippets/
 - `vdefineexpose` - Vue 3 defineExpose API
 - `vdefinemodel` - Vue 3 defineModel API (用于 v-model 的新语法糖，Vue 3.4+)
 - `vuseref` - Vue 3 ref 快速声明
+- `vusetemplateref` - Vue 3 useTemplateRef 快速声明 (Vue 3.5+)
 - `vusecomputed` - Vue 3 computed 快速声明
 - `vusewatch` - Vue 3 watch 快速声明
 - `vuseonmounted` - Vue 3 onMounted 快速声明
+- `v3dref` - Vue 3.5+ $ref 语法糖 (响应式转换)
+- `v3dcomputed` - Vue 3.5+ $computed 语法糖 (响应式转换)
+- `v3dshallowref` - Vue 3.5+ $shallowRef 语法糖 (响应式转换)
+- `v3dcustomref` - Vue 3.5+ $customRef 语法糖 (响应式转换)
+- `v3dtoref` - Vue 3.5+ $toRef 语法糖 (响应式转换)
 - `vuserouter` - Vue Router useRouter 快速声明
 - `vuseroute` - Vue Router useRoute 快速声明
 
-### 7. 忽略文件代码片段 (`ignore.code-snippets`)
+### Vue 3.5+ SSR 增强代码片段
+
+- `v3useid` - Vue 3.5+ useId API用于服务端渲染(SSR)
+- `v3lazyhydration` - Vue 3.5+ Lazy Hydration延迟水合
+- `v3definecustomelement` - Vue 3.5+ 增强的defineCustomElement API
+
+### Vue 3.5+ 响应式和Custom Elements增强代码片段
+
+- `v3reactiveprops` - Vue 3.5+ 响应式Props解构
+- `v3usehost` - Vue 3.5+ useHost API用于Custom Elements
+- `v3useshadowroot` - Vue 3.5+ useShadowRoot API用于Custom Elements
+
+### Vue 3.5+ 性能优化代码片段
+
+- `v3static` - Vue 3.5+ 静态提升优化
+- `v3patchflag` - Vue 3.5+ Patch Flags渲染优化
+- `v3shallowperf` - Vue 3.5+ Shallow Ref性能优化
+- `v3freezeprop` - Vue 3.5+ Object.freeze性能优化
+- `v3async` - Vue 3.5+ 异步组件性能优化
+- `v3lazyconfig` - Vue 3.5+ Lazy Hydration配置
+- `v3proxyperf` - Vue 3.5+ 基于Proxy的响应式系统优化
+- `v3computedperf` - Vue 3.5+ 计算属性缓存优化
+
+### Vue 3.4+ 组合式API代码片段7. 忽略文件代码片段 (`ignore.code-snippets`)
 
 - `gitignore` - 生成 .gitignore 文件内容
 

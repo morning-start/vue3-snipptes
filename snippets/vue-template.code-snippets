@@ -151,5 +151,173 @@
       "<router-link to=\"${1:/}\">${2:Link Text}</router-link>"
     ],
     "description": "Vue Router Link component"
+  },
+  "Vue Bind Object": {
+    "prefix": "vbind",
+    "body": [
+      "<${1:component} v-bind=\"${2:object}\"></${1:component}>"
+    ],
+    "description": "v-bind object shorthand"
+  },
+  "Vue Bind Class": {
+    "prefix": "vbind-class",
+    "body": [
+      "<${1:div} :class=\"${2:className}\"></${1:div}>"
+    ],
+    "description": "Semantic class binding"
+  },
+  "Vue Bind Style": {
+    "prefix": "vbind-style",
+    "body": [
+      "<${1:div} :style=\"${2:styleObject}\"></${1:div}>"
+    ],
+    "description": "Semantic style binding"
+  },
+  "Vue Bind Same Name Shorthand": {
+    "prefix": "vbind-same",
+    "body": [
+      "<${1:input} :${2:style} />"
+    ],
+    "description": "Vue 3.4+ v-bind same-name shorthand"
+  },
+  "Vue Teleport": {
+    "prefix": "vteleport",
+    "body": [
+      "<Teleport to=\"${1:body}\">",
+      "\t${2:<!-- content -->}",
+      "</Teleport>"
+    ],
+    "description": "Teleport component"
+  },
+  "Vue Suspense": {
+    "prefix": "vsuspense",
+    "body": [
+      "<Suspense>",
+      "\t<template #default>",
+      "\t\t${1:<!-- async component -->}",
+      "\t</template>",
+      "\t<template #fallback>",
+      "\t\t${2:<!-- loading state -->}",
+      "\t</template>",
+      "</Suspense>"
+    ],
+    "description": "Suspense component template"
+  },
+  "Vue Transition": {
+    "prefix": "vtransition",
+    "body": [
+      "<Transition name=\"${1:fade}\" mode=\"${2:out-in}\">",
+      "\t<${3:component} v-if=\"${4:condition}\" />",
+      "</Transition>"
+    ],
+    "description": "Transition component"
+  },
+  "Vue Keep Alive": {
+    "prefix": "vkeepalive",
+    "body": [
+      "<KeepAlive>",
+      "\t<component :is=\"${1:currentComponent}\" />",
+      "</KeepAlive>"
+    ],
+    "description": "KeepAlive component"
+  },
+  "Vue Dynamic Slot": {
+    "prefix": "vdynslot",
+    "body": [
+      "<template #[${1:slotName}]=\"${2:slotProps}\">",
+      "\t${3:<!-- slot content -->}",
+      "</template>"
+    ],
+    "description": "Dynamic slot"
+  },
+  "Vue Fragment": {
+    "prefix": "vfragment",
+    "body": [
+      "<template>",
+      "\t${1:<!-- multiple root elements -->}",
+      "</template>"
+    ],
+    "description": "Vue 3 Fragment - multiple root elements"
+  },
+  "Vue Async Component": {
+    "prefix": "vasynccomp",
+    "body": [
+      "<Suspense>",
+      "\t<template #default>",
+      "\t\t<${1:AsyncComponent} />",
+      "\t</template>",
+      "\t<template #fallback>",
+      "\t\t<div>${2:Loading...}</div>",
+      "\t</template>",
+      "</Suspense>"
+    ],
+    "description": "Vue 3 Async Component with Suspense"
+  },
+  "Vue Model Modifier": {
+    "prefix": "vmodelmod",
+    "body": [
+      "v-model:${1:property}.${2:modifier}=\"${3:value}\""
+    ],
+    "description": "Vue 3 v-model with property and modifier"
+  },
+  "Vue Reactive Style": {
+    "prefix": "vstylebind",
+    "body": [
+      "<style scoped>",
+      "\t.${1:className} {",
+      "\t\tcolor: v-bind(${2:color});",
+      "\t\tbackground: v-bind('${3:backgroundColor}');",
+      "\t}",
+      "</style>"
+    ],
+    "description": "Vue 3 reactive style binding"
+  },
+  "Vue Custom Directive": {
+    "prefix": "vcustomdir",
+    "body": [
+      "<!-- In template -->",
+      "<div v-${1:directiveName}:${2:argument}.${3:modifier}=\"${4:value}\"></div>",
+      "",
+      "<!-- In script -->",
+      "<script setup>",
+      "const v${1:DirectiveName} = {",
+      "\tmounted(el, binding) {",
+      "\t\t${5:// Directive logic}",
+      "\t}",
+      "}",
+      "</script>"
+    ],
+    "description": "Vue 3 custom directive template"
+  },
+  "Vue Teleport Multiple": {
+    "prefix": "vteleportmul",
+    "body": [
+      "<Teleport to=\"${1:#target1}\">",
+      "\t<${2:Component1} />",
+      "</Teleport>",
+      "<Teleport to=\"${3:#target2}\">",
+      "\t<${4:Component2} />",
+      "</Teleport>"
+    ],
+    "description": "Vue 3 Teleport with multiple targets"
+  },
+  "Vue Template Ref": {
+    "prefix": "vtemplateref",
+    "body": [
+      "<!-- In template -->",
+      "<input ref=\"${1:inputRef}\" type=\"text\" />",
+      "",
+      "<!-- In script -->",
+      "<script setup>",
+      "import { useTemplateRef, onMounted } from 'vue'",
+      "",
+      "const ${2:input} = useTemplateRef('${1:inputRef}')",
+      "",
+      "onMounted(() => {",
+      "\t${2:input}.value?.focus()",
+      "})",
+      "</script>"
+    ],
+    "description": "Vue 3 template ref with useTemplateRef (Vue 3.5+)"
   }
 }

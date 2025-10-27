@@ -476,6 +476,13 @@
     ],
     "description": "const foo = ref() quick declaration"
   },
+  "Vue Composition API - useTemplateRef": {
+    "prefix": "vusetemplateref",
+    "body": [
+      "const ${1:name} = useTemplateRef('${2:template-ref}')"
+    ],
+    "description": "const foo = useTemplateRef() quick declaration (Vue 3.5+)"
+  },
   "Vue Composition API - useComputed": {
     "prefix": "vusecomputed",
     "body": [
@@ -502,6 +509,267 @@
       "})"
     ],
     "description": "Quickly insert onMounted(() => {})"
+  },
+  "Vue Composition API - $ref": {
+    "prefix": "v3dref",
+    "body": [
+      "let ${1:name} = \\$ref(${2:initialValue})"
+    ],
+    "description": "Vue 3.5+ $ref syntax sugar (reactivity transform)"
+  },
+  "Vue Composition API - $computed": {
+    "prefix": "v3dcomputed",
+    "body": [
+      "let ${1:name} = \\$computed(() => {",
+      "\t${2:return value}",
+      "})"
+    ],
+    "description": "Vue 3.5+ $computed syntax sugar (reactivity transform)"
+  },
+  "Vue Composition API - $shallowRef": {
+    "prefix": "v3dshallowref",
+    "body": [
+      "let ${1:name} = \\$shallowRef(${2:initialValue})"
+    ],
+    "description": "Vue 3.5+ $shallowRef syntax sugar (reactivity transform)"
+  },
+  "Vue Composition API - $customRef": {
+    "prefix": "v3dcustomref",
+    "body": [
+      "let ${1:name} = \\$customRef((track, trigger) => {",
+      "\treturn {",
+      "\t\tget() {",
+      "\t\t\ttrack()",
+      "\t\t\treturn ${2:value}",
+      "\t\t},",
+      "\t\tset(newValue) {",
+      "\t\t\t${3:value = newValue}",
+      "\t\t\ttrigger()",
+      "\t\t}",
+      "\t}",
+      "})"
+    ],
+    "description": "Vue 3.5+ $customRef syntax sugar (reactivity transform)"
+  },
+  "Vue Composition API - $toRef": {
+    "prefix": "v3dtoref",
+    "body": [
+      "let ${1:name} = \\$toRef(${2:reactiveObject}, '${3:key}')"
+    ],
+    "description": "Vue 3.5+ $toRef syntax sugar (reactivity transform)"
+  },
+  "Vue Composition API - useId": {
+    "prefix": "v3useid",
+    "body": [
+      "const ${1:id} = useId()"
+    ],
+    "description": "Vue 3.5+ useId for SSR (Server-Side Rendering)"
+  },
+  "Vue Composition API - Lazy Hydration": {
+    "prefix": "v3lazyhydration",
+    "body": [
+      "<${1:Component} v-hydrate-on-visible />"
+    ],
+    "description": "Vue 3.5+ Lazy Hydration for SSR performance"
+  },
+  "Vue Composition API - defineCustomElement": {
+    "prefix": "v3definecustomelement",
+    "body": [
+      "const ${1:CustomElement} = defineCustomElement(${2:MyComponent}, {",
+      "\tshadowRoot: ${3:false}, // 不使用 Shadow DOM",
+      "\tconfigureApp(app) {",
+      "\t\tapp.config.errorHandler = (err) => {",
+      "\t\t\t${4:// 自定义错误处理}",
+      "\t\t}",
+      "\t}",
+      "})"
+    ],
+    "description": "Vue 3.5+ defineCustomElement with enhanced options"
+  },
+  "Vue Composition API - Reactive Props Destructuring": {
+    "prefix": "v3reactiveprops",
+    "body": [
+      "const { ${1:propName} } = defineProps(['${1:propName}'])",
+      "// 在 Vue 3.5+ 中，解构后的 props 保持响应性，无需 .value"
+    ],
+    "description": "Vue 3.5+ Reactive Props Destructuring"
+  },
+  "Vue Composition API - useHost": {
+    "prefix": "v3usehost",
+    "body": [
+      "const host = useHost()",
+      "// 在 Custom Elements 中获取宿主元素"
+    ],
+    "description": "Vue 3.5+ useHost API for Custom Elements"
+  },
+  "Vue Composition API - useShadowRoot": {
+    "prefix": "v3useshadowroot",
+    "body": [
+      "const shadowRoot = useShadowRoot()",
+      "// 在 Custom Elements 中获取 Shadow Root"
+    ],
+    "description": "Vue 3.5+ useShadowRoot API for Custom Elements"
+  },
+  "Vue 3.5+ Performance - Static Hoisting": {
+    "prefix": "v3static",
+    "body": [
+      "<!-- 静态内容会被提升，不会在每次渲染时重新创建 -->",
+      "<div class=\"static-class\">",
+      "\t<h1>静态标题</h1>",
+      "\t<p>这段内容是静态的，Vue 3.5会将其提升以优化性能</p>",
+      "</div>",
+      "<!-- 动态内容 -->",
+      "<div>{{ dynamicContent }}</div>"
+    ],
+    "description": "Vue 3.5+ Static Hoisting for Performance Optimization"
+  },
+  "Vue 3.5+ Performance - Patch Flags": {
+    "prefix": "v3patchflag",
+    "body": [
+      "<!-- Vue 3.5 会为这些元素添加 Patch Flags 以优化更新 -->",
+      "<!-- 仅文本内容变化 -->",
+      "<div>{{ text }}</div>",
+      "<!-- 仅 class 变化 -->",
+      "<div :class=\"className\">静态内容</div>",
+      "<!-- 多个属性变化 -->",
+      "<div :class=\"className\" :style=\"style\">{{ text }}</div>"
+    ],
+    "description": "Vue 3.5+ Patch Flags for Render Optimization"
+  },
+  "Vue 3.5+ Performance - Shallow Ref": {
+    "prefix": "v3shallowperf",
+    "body": [
+      "// 对于大型数据对象，使用 shallowRef 避免深层响应式转换",
+      "const largeData = shallowRef({",
+      "\t// 大量数据",
+      "\titems: Array.from({ length: 10000 }, (_, i) => ({ id: i, name: `Item \\${i}` }))",
+      "})",
+      "",
+      "// 只在需要时更新整个对象",
+      "const updateData = () => {",
+      "\tlargeData.value = {",
+      "\t\titems: Array.from({ length: 10000 }, (_, i) => ({ id: i, name: `Updated Item \\${i}` }))",
+      "\t}",
+      "}"
+    ],
+    "description": "Vue 3.5+ Performance Optimization with shallowRef"
+  },
+  "Vue 3.5+ Performance - Object Freezing": {
+    "prefix": "v3freezeprop",
+    "body": [
+      "// 对于不需要响应式的常量对象，使用 Object.freeze 避免响应式转换",
+      "const constants = Object.freeze({",
+      "\tMAX_ITEMS: 100,",
+      "\tDEFAULT_THEME: 'light',",
+      "\tAPI_ENDPOINT: 'https://api.example.com'",
+      "})",
+      "",
+      "// 在组件中使用",
+      "const config = reactive({",
+      "\ttheme: constants.DEFAULT_THEME,",
+      "\tmaxItems: constants.MAX_ITEMS",
+      "})"
+    ],
+    "description": "Vue 3.5+ Performance Optimization with Object.freeze"
+  },
+  "Vue 3.5+ Performance - Async Component": {
+    "prefix": "v3async",
+    "body": [
+      "// 异步组件 - 按需加载，减少初始包大小",
+      "const ${1:AsyncComponent} = defineAsyncComponent({",
+      "\t// 加载函数",
+      "\tloader: () => import('./${1:AsyncComponent}.vue'),",
+      "\t// 加载中组件",
+      "\tloadingComponent: ${2:LoadingComponent},",
+      "\t// 错误组件",
+      "\terrorComponent: ${3:ErrorComponent},",
+      "\t// 延迟显示加载组件的时间（毫秒）",
+      "\tdelay: ${4:200},",
+      "\t// 超时时间（毫秒）",
+      "\ttimeout: ${5:3000},",
+      "\t// Suspense 模式",
+      "\tsuspensible: ${6:true},",
+      "\t// 错误处理",
+      "\tonError(error, retry, fail, attempts) {",
+      "\t\tif (attempts <= 3) {",
+      "\t\t\t// 重试之前延迟",
+      "\t\t\tsetTimeout(retry, 1000)",
+      "\t\t} else {",
+      "\t\t\tfail()",
+      "\t\t}",
+      "\t}",
+      "})"
+    ],
+    "description": "Vue 3.5+ Async Component for Performance Optimization"
+  },
+  "Vue 3.5+ Performance - Lazy Hydration Config": {
+    "prefix": "v3lazyconfig",
+    "body": [
+      "// 在 vite.config.js 中配置 Lazy Hydration",
+      "export default defineConfig({",
+      "\tplugins: [",
+      "\t\tvue({",
+      "\t\t\ttemplate: {",
+      "\t\t\t\tcompilerOptions: {",
+      "\t\t\t\t\thydration: {",
+      "\t\t\t\t\t\t// 启用 Lazy Hydration",
+      "\t\t\t\t\t\tlazy: true,",
+      "\t\t\t\t\t\t// 设置水合策略",
+      "\t\t\t\t\t\tstrategy: '${1:visible}', // 'visible' | 'idle' | 'media' | 'event'",
+      "\t\t\t\t\t\t// 设置延迟时间",
+      "\t\t\t\t\t\tdelay: ${2:0},",
+      "\t\t\t\t\t\t// 设置媒体查询条件",
+      "\t\t\t\t\t\tmediaQuery: '${3:(max-width: 768px)}'",
+      "\t\t\t\t\t}",
+      "\t\t\t\t}",
+      "\t\t\t}",
+      "\t\t})",
+      "\t]",
+      "})"
+    ],
+    "description": "Vue 3.5+ Lazy Hydration Configuration for SSR Performance"
+  },
+  "Vue 3.5+ Performance - Reactive Proxy": {
+    "prefix": "v3proxyperf",
+    "body": [
+      "// Vue 3.5 基于 Proxy 的响应式系统优化",
+      "// 相比 Vue 2 的 Object.defineProperty，Proxy 能更好地处理数组和动态属性",
+      "const state = reactive({",
+      "\titems: [], // 数组变化自动响应",
+      "\tcount: 0",
+      "})",
+      "",
+      "// 动态添加属性也具有响应性",
+      "const addItem = () => {",
+      "\tstate.items.push({",
+      "\t\tid: state.items.length,",
+      "\t\tname: `Item \\${state.items.length}`",
+      "\t})",
+      "\t// 动态添加的属性也具有响应性",
+      "\tstate.newProperty = '动态属性'",
+      "}"
+    ],
+    "description": "Vue 3.5+ Performance Optimization with Proxy-based Reactivity"
+  },
+  "Vue 3.5+ Performance - Computed Caching": {
+    "prefix": "v3computedperf",
+    "body": [
+      "// 计算属性会基于响应式依赖进行缓存",
+      "const expensiveCalculation = computed(() => {",
+      "\tconsole.log('执行昂贵的计算')",
+      "\treturn state.items.reduce((sum, item) => sum + item.id, 0)",
+      "})",
+      "",
+      "// 多次访问计算属性，但依赖未变化时不会重新计算",
+      "console.log(expensiveCalculation.value) // 执行计算",
+      "console.log(expensiveCalculation.value) // 使用缓存",
+      "console.log(expensiveCalculation.value) // 使用缓存",
+      "",
+      "// 只有当依赖变化时才会重新计算",
+      "state.items.push({ id: 100, name: 'New Item' })",
+      "console.log(expensiveCalculation.value) // 重新执行计算"
+    ],
+    "description": "Vue 3.5+ Performance Optimization with Computed Caching"
   },
   "Vue Router - useRouter": {
     "prefix": "vuserouter",
