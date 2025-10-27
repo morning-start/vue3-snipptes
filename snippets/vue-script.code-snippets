@@ -575,5 +575,19 @@
     ],
     "description": "Quickly insert onMounted(() => {})"
   },
+  "Vue Router - useRouter": {
+    "prefix": "vuserouter",
+    "body": [
+      "const router = useRouter()"
+    ],
+    "description": "Get router instance in setup"
+  },
+  "Vue Router - useRoute": {
+    "prefix": "vuseroute",
+    "body": [
+      "const route = useRoute()"
+    ],
+    "description": "Get current route in setup"
+  }
 
 }

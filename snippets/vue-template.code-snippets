@@ -138,4 +138,18 @@
       ],
       "description": "Vue Emit to Parent Component"
     },
+  "Vue Router View": {
+    "prefix": "vrouter-view",
+    "body": [
+      "<router-view />"
+    ],
+    "description": "Vue Router View component"
+  },
+  "Vue Router Link": {
+    "prefix": "vrouter-link",
+    "body": [
+      "<router-link to=\"${1:/}\">${2:Link Text}</router-link>"
+    ],
+    "description": "Vue Router Link component"
+  }
 }

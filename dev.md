@@ -99,6 +99,8 @@ snippets/
 - `vroutepath` - 路径路由链接
 - `vemit-child` - 子组件触发事件
 - `vemit-parent` - 父组件监听事件
+- `vrouter-view` - Vue Router View 组件
+- `vrouter-link` - Vue Router Link 组件
 
 ### 6. Vue 脚本代码片段 (`vue-script.code-snippets`)
 
@@ -161,6 +163,8 @@ snippets/
 - `vusecomputed` - Vue 3 computed 快速声明
 - `vusewatch` - Vue 3 watch 快速声明
 - `vuseonmounted` - Vue 3 onMounted 快速声明
+- `vuserouter` - Vue Router useRouter 快速声明
+- `vuseroute` - Vue Router useRoute 快速声明
 
 ### 7. 忽略文件代码片段 (`ignore.code-snippets`)
 
