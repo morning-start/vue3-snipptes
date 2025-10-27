@@ -14,6 +14,37 @@
 - 对vite支持前缀为 `vite`
 - 使用选项式要在前缀后面添加 `-opt`。例如 `vbase-opt`
 
+### Vue 3.5+ 新特性支持
+
+本扩展现已支持Vue 3.5的最新特性，包括：
+
+#### 响应式语法糖
+- `$ref`、`$computed`、`$shallowRef`、`$customRef`、`$toRef` 等响应式转换语法
+
+#### SSR增强
+- `useId` API用于服务端渲染
+- Lazy Hydration延迟水合
+- 增强的defineCustomElement API
+
+#### 响应式和Custom Elements增强
+- 响应式Props解构（解构后的props保持响应性）
+- useHost API用于Custom Elements
+- useShadowRoot API用于Custom Elements
+
+#### 性能优化
+- 静态提升优化
+- Patch Flags渲染优化
+- Shallow Ref性能优化
+- Object.freeze性能优化
+- 异步组件性能优化
+- Lazy Hydration配置
+- 基于Proxy的响应式系统优化
+- 计算属性缓存优化
+
+#### useTemplateRef
+- useTemplateRef 快速声明
+- 模板引用模板
+
 ### 路由(router)功能
 
 路由相关的代码片段前缀都以 `router` 开头：
@@ -50,7 +81,7 @@ Vue模板相关的代码片段前缀包括：
 ### TODO
 
 - [x]  vue初始化代码片段
-- [ ]  vue模板
+- [x]  vue模板
 - [x]  pinia
 - [x]  router
 - [x]  vite

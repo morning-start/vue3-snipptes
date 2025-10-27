@@ -14,6 +14,37 @@ Make the syntax closer to Vue3, the whole will be biased towards combination, an
 - router support start with `router`
 - vite support start with `vite`
 
+### Vue 3.5+ New Features Support
+
+This extension now supports the latest features of Vue 3.5, including:
+
+#### Reactive Syntax Sugar
+- `$ref`, `$computed`, `$shallowRef`, `$customRef`, `$toRef` and other reactive transformation syntax
+
+#### SSR Enhancements
+- `useId` API for server-side rendering
+- Lazy Hydration for performance
+- Enhanced defineCustomElement API
+
+#### Reactive and Custom Elements Enhancements
+- Reactive Props destructuring (destructured props maintain reactivity)
+- useHost API for Custom Elements
+- useShadowRoot API for Custom Elements
+
+#### Performance Optimizations
+- Static hoisting optimization
+- Patch Flags render optimization
+- Shallow Ref performance optimization
+- Object.freeze performance optimization
+- Async component performance optimization
+- Lazy Hydration configuration
+- Proxy-based reactive system optimization
+- Computed property caching optimization
+
+#### useTemplateRef
+- useTemplateRef quick declaration
+- Template reference template
+
 ### Router Features
 
 Router-related snippets all start with `router` prefix:
@@ -49,11 +80,11 @@ Vue template-related snippets include:
 
 ### TODO
 
-- [x]  vue init int combination
-- [ ]  vue template
+- [x]  vue初始化代码片段
+- [x]  vue模板
 - [x]  pinia
-- [ ]  router
-- [ ]  vite
+- [x]  router
+- [x]  vite
 
 ## Reference
 
